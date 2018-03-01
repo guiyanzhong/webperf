@@ -7,5 +7,6 @@ defmodule HelloWorldWeb.Router do
 
   scope "/api", HelloWorldWeb do
     pipe_through :api
+    get "/", HelloController, :hello_world
   end
 end
