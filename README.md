@@ -9,3 +9,4 @@ Elixir / Plug (Cowboy)        |  5557                 |  18 ms             |   4
 Elixir / Phoenix (Cowboy)     |  2002                 |  50 ms             |  107 ms           |    477 KB/s     |
 Ruby / Sinatra (Puma)         |  1517                 |  66 ms             |  151 ms           |    273 KB/s     |
 Groovy / Spring Boot (Tomcat) |  1617                 |  62 ms             |  260 ms           |    229 KB/s     |
+Java / Spring Boot (Tomcat)   |  2306                 |  43 ms             |   96 ms           |    326 KB/s     |
