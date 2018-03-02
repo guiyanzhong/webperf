@@ -1,9 +1,10 @@
 ## Web performance tests for different programming languages and frameworks
 
-Here are the results of 10000 requests with concurrency level of 100, on Thinkpad X200, Ubuntu 14.04:
+Here are the ApacheBench results of 10000 requests with concurrency level of 100, on Thinkpad X200, Ubuntu 14.04:
 
 Language / Framework   |  Requests per Second  |  Time per Request  |  Longest Request  |  Transfer Rate  |
 -----------------------|-----------------------|--------------------|-------------------|-----------------|
-Golang / stdlib        |  8645                 |  11.6ms            |   38ms            |   1080.64 KB/s  |
-Elixir / Phoenix       |  2002                 |  49.9ms            |  107ms            |    477.12 KB/s  |
-Ruby / Sinatra + Puma  |  1517                 |  65.9ms            |  151ms            |    272.52 KB/s  |
+Golang / stdlib        |  8645                 |  12 ms             |   38 ms           |   1081 KB/s     |
+Elixir / Plug + Cowboy |  5557                 |  18 ms             |   43 ms           |   1069 KB/s     |
+Elixir / Phoenix       |  2002                 |  50 ms             |  107 ms           |    477 KB/s     |
+Ruby / Sinatra + Puma  |  1517                 |  66 ms             |  151 ms           |    273 KB/s     |
