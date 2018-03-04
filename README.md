@@ -12,3 +12,12 @@ Java / Spring Boot + Tomcat   |  11453                |  13 /  18 /  232        
 Groovy / Spring Boot + Tomcat |  10938                |  14 /  19 /  227                  |    1.32 MB/s    |
 
 [Details](wrk_c100.md)
+
+## Results of concurrency level from 10 to 1000.
+
+Data: latency, req/sec
+
+Language / Framework                                     | c2          | c10      | c20       | c100      | c1000      |
+---------------------------------------------------------|-------------|----------|-----------|-----------|------------|
+[Go / stdlib](wrk_go_stdlib.md)                          | 0.16, 21020 | 7, 21564 | 10, 21577 | 19, 21031 | 154, 20540 |
+[Elixir / Plug+Cowboy](wrk_elixir_plug_cowboy_poison.md) | 0.22,  8853 | 1, 14685 |  2, 14658 | 12, 13946 |  48, 13136 |
