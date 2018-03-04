@@ -1,12 +1,14 @@
-## Web performance tests for different programming languages and frameworks
+# Web performance tests using wrk
 
-Here are the ApacheBench results of 10000 requests with concurrency level of 100, on Thinkpad X200, Ubuntu 14.04:
+## Results of concurrency level of 100, on Thinkpad X200, 8GB RAM, Ubuntu 14.04:
 
-Language / Framework          |  Requests per Second  |  Time per Request  |  Longest Request  |  Transfer Rate  |
-------------------------------|-----------------------|--------------------|-------------------|-----------------|
-Golang / stdlib (net/http)    |  8645                 |  12 ms             |   38 ms           |   1081 KB/s     |
-Elixir / Plug (Cowboy)        |  5557                 |  18 ms             |   43 ms           |   1069 KB/s     |
-Elixir / Phoenix (Cowboy)     |  2002                 |  50 ms             |  107 ms           |    477 KB/s     |
-Ruby / Sinatra (Puma)         |  1517                 |  66 ms             |  151 ms           |    273 KB/s     |
-Groovy / Spring Boot (Tomcat) |  1617                 |  62 ms             |  260 ms           |    229 KB/s     |
-Java / Spring Boot (Tomcat)   |  2306                 |  43 ms             |   96 ms           |    326 KB/s     |
+Language / Framework          |  Requests per Second  |  Latency (ms, Avg / Stdev / Max)  |  Transfer Rate  |
+------------------------------|-----------------------|-----------------------------------|-----------------|
+Golang / stdlib net/http      |  22136                |  82 / 133 / 1090                  |    2.70 MB/s    |
+Elixir / Plug + Cowboy        |  14793                |  11 /  14 /  164                  |    2.78 MB/s    |
+Elixir / Phoenix (Cowboy)     |  2961                 |  32 /  12 /  104                  |    0.71 MB/s    |
+Ruby / Sinatra + Puma         |  1717                 |   9 /   8 /   77                  |    0.31 MB/s    |
+Java / Spring Boot + Tomcat   |  11453                |  13 /  18 /  232                  |    1.38 MB/s    |
+Groovy / Spring Boot + Tomcat |  10938                |  14 /  19 /  227                  |    1.32 MB/s    |
+
+[Details](wrk_c100.md)

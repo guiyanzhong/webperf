@@ -11,7 +11,7 @@ func homepage(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	webport := "18888"
+	webport := "8080"
 	http.HandleFunc("/", homepage)
 	err := http.ListenAndServe(":"+webport, nil)
 	if err != nil {
